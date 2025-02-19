@@ -310,6 +310,72 @@ public class ex7 {
     }finally {
             System.out.println("Have a good day");
         }*/
+
+        //try Q16
+        /*try {
+            System.out.println("Input an integer number:");
+            String number = input.nextLine();
+            int num = Integer.valueOf(number);
+            rev(num);
+
+            String reversed = "";
+            for (int i = 0; i < number.length(); i++) {
+                reversed = number.charAt(i)+reversed;
+            }
+            System.out.println("Reversed number: " + reversed);
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        } finally {
+            System.out.println("try it again");
+        }*/
+
+        //try Q17
+        /*try {
+            System.out.println("Enter the number of the inputs you will do:");
+            int number= input.nextInt();
+            coun(number);
+            int min=0;
+            int max=0;
+            int i;
+            for (i =1; i <=number ; i++) {
+                System.out.println("Enter a number");
+                int numb=input.nextInt();
+                if (max < numb){
+                    max=numb;
+                }
+                else if (min >= numb){
+                    min=numb;
+                }else {break;}
+            }
+            System.out.println("The largest number is: "+max);
+            System.out.println("The smallest number is: "+min);
+        }catch (InputMismatchException e){
+            System.out.println("Enter an integer");
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }finally {
+            System.out.println("program ended");
+        }*/
+
+        //try Q18
+        /*System.out.println("Enter a string: ");
+        String sentence = input.nextLine();
+        try {
+            stringOnly(sentence);
+            int counter = 0;
+            for (int i = 0; i < sentence.length(); i++) {
+                if (sentence.charAt(i) == 'a') {
+                    counter++;
+                }
+            }
+            System.out.println("Number of 'a's: " + counter);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        } finally {
+            System.out.println("I hope you like the program");
+        }*/
     }
     //Q2 methode exception
     /*public static void check1(int num1 ,int num2)throws Exception{
@@ -384,7 +450,38 @@ public class ex7 {
             if (number == -1){
                throw new Exception("The end");
             }
+
+            //Q16
+   /* public static void rev(int number) {
+        String numStr = String.valueOf(number);
+        Set<Character> digitsSet = new HashSet<>();
+
+        for (char digit : numStr.toCharArray()) {
+            if (!digitsSet.add(digit)) {
+                throw new IllegalArgumentException("Don't enter the same number so you can see the reverse number for it");
+            }}
+    }*/
+
+
+    //Q17
+    /*public static void coun(int number) throws Exception {
+        if (number==0){
+            throw new Exception("Enter a number that is grater than 0");
+        } else if (number==1) {
+            throw new Exception("Enter a number that is grater than 1");
+        }
+    }*/
+
+    //Q18
+   /* public static void stringOnly(String sentence) throws Exception {
+        for (char c : sentence.toCharArray()) {
+            if (Character.isDigit(c)) {
+                throw new Exception("You cannot enter numbers; only letters are allowed.");
+            }
+        }
         }*/
+
+    
 
 
 
