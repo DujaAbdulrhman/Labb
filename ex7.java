@@ -284,7 +284,7 @@ public class ex7 {
         }*/
 
         //try 15
-        try {
+        /*try {
             int number = 0;
             int positivenum = 0;
             int negativennum = 0;
@@ -309,7 +309,7 @@ public class ex7 {
             System.out.println(e.getMessage());
     }finally {
             System.out.println("Have a good day");
-        }
+        }*/
     }
     //Q2 methode exception
     /*public static void check1(int num1 ,int num2)throws Exception{
@@ -380,11 +380,11 @@ public class ex7 {
     }*/
 
     //  Q 15
-        public static void stop(int number)throws Exception {
+       /* public static void stop(int number)throws Exception {
             if (number == -1){
                throw new Exception("The end");
             }
-        }
+        }*/
 
 
 
